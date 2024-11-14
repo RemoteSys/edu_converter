@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "edu_converter"
+version = "1.0.0"
+dependencies = [ 'xmltodict',
+]
+
+requires-python = ">=3.11"
+authors = [
+  {name = "Piotr Kramarczyk", email = "piotrkramarczyk@proton.me"},
+]
+
+
+description = "Conversion between selected file formats: csv, json, xml."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = []
+
+
+[project.urls]
+
+
+[project.scripts]
+edu_convert = "edu_converter.main:main"
+
