@@ -4,7 +4,8 @@ from pathlib import Path
 
 def my_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("path", type=str, help="Path to data file (*.csv)")
+    parser.add_argument("path", type=str, help="Path to the data file in one \
+            of the formats: '*.csv', '*.json', '*.xml'.")
     parser.add_argument(
         "-o", "--out_name", type=str, help="Name of file with resualts."
     )
