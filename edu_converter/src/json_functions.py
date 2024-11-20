@@ -32,6 +32,6 @@ def save_as_csv(data: dict, path):
 def from_json(path: str, out_path):
     """Function called in `main()` to handle `json` input data."""
     data = read_json(path)
-    out_path = f"{out_path}.json"
+    out_path = f"{out_path}.csv"
     save_as_csv(data, out_path)
     return out_path
